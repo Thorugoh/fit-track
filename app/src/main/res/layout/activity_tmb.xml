@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:context=".IMCActivity">
+
+        <TextView
+            style="@style/TextViewForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tmb_desc"
+            />
+
+        <EditText
+            style="@style/EditTextForm"
+            android:id="@+id/edit_tmb_weigth"
+            android:inputType="number"
+            android:hint="@string/weight"
+            />
+
+        <EditText
+            style="@style/EditTextForm"
+            android:id="@+id/edit_tmb_height"
+            android:hint="@string/height"
+            android:inputType="number" />
+
+        <EditText
+            style="@style/EditTextForm"
+            android:id="@+id/edit_tmb_age"
+            android:hint="@string/age"
+            android:inputType="number" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AutoTextViewForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_lifestyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            style="@style/ButtonForm"
+            android:text="@string/calc"
+            android:layout_gravity="center"
+            android:id="@+id/btnc_tmb_send" />
+    </LinearLayout>
+</ScrollView>
